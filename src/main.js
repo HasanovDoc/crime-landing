@@ -1,4 +1,8 @@
-import { createApp } from "vue";
-import App from "./App.vue";
+import { createApp } from 'vue'
+import App from './App.vue'
+import VSpoiler from 'v-spoiler';
+import 'v-spoiler/dist/v-spoiler.css';
 
-createApp(App).mount("#app");
+const app = createApp(App);
+app.component('VSpoiler', VSpoiler);
+app.mount('#app');
